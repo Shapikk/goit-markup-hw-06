@@ -776,15 +776,6 @@ textarea {
   background-origin: border-box;
   background-size: contain;
 }
-
-/*.icon-checkbox:checked {
-  fill: var(--address-color);
-  border-color: var(--address-color);
-  background-color: var(--address-color);
-  background-origin: border-box;
-  background-size: contain;
-}*/
-
 .button-form {
   background-color: var(--address-color);
   color: #ffffff;
