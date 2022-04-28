@@ -633,7 +633,8 @@ span.studio-two {
   fill: #000000;
   transition: fill 250ms var(--o-transition-timing-function);
 }
-.but-close:hover {
+.but-close:hover,
+.but-close:focus {
   fill: var(--address-color);
 }
 /* Модальное окно */
@@ -740,6 +741,7 @@ textarea {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
 .form-form-checkbox label {
   position: relative;
   margin-left: 36px;
@@ -750,6 +752,7 @@ textarea {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  transition: border-color 250ms var(--o-transition-timing-function);
 }
 .form-form-checkbox input {
   appearance: none;
@@ -775,6 +778,11 @@ textarea {
   background-color: var(--address-color);
   background-origin: border-box;
   background-size: contain;
+}
+
+.checkbox:hover ~ .icon-checkbox {
+  border-color: var(--address-color);
+  transition: border-color 250ms var(--o-transition-timing-function);
 }
 .button-form {
   background-color: var(--address-color);
