@@ -614,6 +614,7 @@ span.studio-two {
   border-radius: 4px;
   transition: transform 250ms var(--o-transition-timing-function);
 }
+
 .close {
   display: flex;
   align-items: center;
@@ -627,9 +628,18 @@ span.studio-two {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  transition: fill 250ms var(--o-transition-timing-function);
 }
-
 .but-close {
+  fill: #000000;
+  transition: fill 250ms var(--o-transition-timing-function);
+}
+.close:hover .but-close,
+.close:focus .but-close {
+  fill: var(--address-color);
+  cursor: pointer;
+}
+/*.but-close {
   fill: #000000;
   transition: fill 250ms var(--o-transition-timing-function);
 }
@@ -779,10 +789,11 @@ textarea {
   background-origin: border-box;
   background-size: contain;
 }
-
-.checkbox:hover ~ .icon-checkbox {
+.checkbox:hover ~ .icon-checkbox,
+.checkbox:focus ~ .icon-checkbox {
   border-color: var(--address-color);
   transition: border-color 250ms var(--o-transition-timing-function);
+  cursor: pointer;
 }
 .button-form {
   background-color: var(--address-color);
